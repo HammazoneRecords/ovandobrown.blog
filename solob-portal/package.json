@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender.js",
     "build:pdf": "node scripts/build-pdf.js",
     "paginate": "node scripts/auto-paginate.js",
     "preview": "vite preview",
     "clean": "rm -rf dist",
+    "check": "node ../playground/2026-04-logic-check/logic-check.js logic-check.config.js",
     "lint": "tsc --noEmit",
     "start": "node server.ts"
   },

@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# SEO pages — crawl these
+Allow: /about
+Allow: /gates-overview
+Allow: /gates/
+Allow: /glossary
+
+# Protected app routes — no value for crawlers
+Disallow: /dashboard
+Disallow: /designer
+Disallow: /offering
+Disallow: /confirmation
+
+# API
+Disallow: /api/
+
+Sitemap: https://whatissolob.com/sitemap.xml

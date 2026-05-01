@@ -9,6 +9,10 @@ import Confirmation from './pages/Confirmation';
 import Dashboard from './pages/Dashboard';
 import Reader from './pages/Reader';
 import BookDesigner from './pages/BookDesigner';
+import About from './pages/seo/About';
+import GatesIndex from './pages/seo/GatesIndex';
+import GatePage from './pages/seo/GatePage';
+import Glossary from './pages/seo/Glossary';
 
 import { Home } from 'lucide-react';
 
@@ -71,6 +75,10 @@ function AnimatedRoutes() {
             <GlobalNav />
             <Routes location={location}>
               <Route path="/" element={<Threshold />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/gates-overview" element={<GatesIndex />} />
+              <Route path="/gates/:gateName" element={<GatePage />} />
+              <Route path="/glossary" element={<Glossary />} />
               <Route path="/gates" element={<ProtectedRoute><GateSelection /></ProtectedRoute>} />
               <Route path="/offering" element={<ProtectedRoute><Offering /></ProtectedRoute>} />
               <Route path="/confirmation" element={<Confirmation />} />
