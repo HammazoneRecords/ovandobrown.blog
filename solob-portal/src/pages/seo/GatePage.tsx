@@ -127,7 +127,7 @@ export default function GatePage() {
       />
 
       {/* Nav */}
-      <nav className="border-b border-white/5 px-6 py-4 flex items-center justify-between max-w-4xl mx-auto">
+      <nav className="px-6 py-4 flex items-center justify-between max-w-4xl mx-auto">
         <Link to="/gates-overview" className="text-[#00d0ff] text-sm tracking-widest uppercase hover:opacity-70 transition-opacity">
           ← All Eight Gates
         </Link>
