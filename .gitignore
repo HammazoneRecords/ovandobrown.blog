@@ -21,3 +21,6 @@ solob-portal/out/
 solob-portal/.env
 solob-portal/.env.local
 solob-portal/.env*.local
+
+# VPS backups — large, contains secrets, never commit
+vps_management/backups/
