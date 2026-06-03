@@ -12,7 +12,7 @@ The digital portal for *The Book of Solobility V0* — a reader experience built
 
 - **Frontend:** React 19 + TypeScript + Vite + Tailwind v4
 - **Backend:** Express + better-sqlite3 (SQLite)
-- **Runtime:** Node.js via PM2 on VPS, served behind Nginx
+- **Runtime:** Node.js in Docker (`mw-solob`) on VPS, served behind Nginx
 
 ---
 
@@ -59,9 +59,8 @@ Server starts at `http://localhost:3000`
 ## Production Deploy
 
 ```bash
-git pull
-npm run build
-pm2 restart solob-portal
+cd /opt/mw/solob-portal && git pull
+cd /opt/mw && docker compose build solob && docker compose up -d solob
 ```
 
 ---
