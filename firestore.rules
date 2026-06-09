@@ -1,0 +1,20 @@
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow public read access for posts
+    match /posts/{postId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Allow public read access for comments
+    // Allow authenticated users to create (write) new comments
+    match /comments/{commentId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if false;
+    }
+  }
+}
