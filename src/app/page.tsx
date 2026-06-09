@@ -1,22 +1,8 @@
-import Image from 'next/image';
 import { type Post, getPosts } from '@/lib/posts';
 import PostCard from '@/components/post-card';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
 import { User, Image as ImageIcon } from 'lucide-react';
 import CircleAreaProof from '@/components/CircleAreaProof';
 import FeaturedPost from '@/components/featured-post';
-
-const NavPlanet = ({ href, imgSrc, label, hint, animationClass, imageClassName, imageAnimationClass }: { href: string, imgSrc: string, label: string, hint: string, animationClass?: string, imageClassName?: string, imageAnimationClass?: string }) => (
-  <Link href={href} className="group relative flex flex-col items-center gap-2 transition-transform duration-300 hover:!scale-110">
-    <div className={cn('h-24 w-24 rounded-full shadow-2xl md:h-32 md:w-32', animationClass)}>
-      <Image src={imgSrc} alt={label} data-ai-hint={hint} width={128} height={128} className={cn('rounded-full opacity-90', imageClassName, imageAnimationClass)} />
-    </div>
-    <span className="absolute -bottom-8 whitespace-nowrap text-lg font-bold text-primary opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:drop-shadow-[0_0_10px_hsl(var(--primary))]">
-      {label}
-    </span>
-  </Link>
-);
 
 export default async function Home() {
   console.log('Fetching posts on server...');
@@ -28,20 +14,17 @@ export default async function Home() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <section className="relative mb-24 flex h-[70vh] flex-col items-center justify-center overflow-hidden text-center rounded-3xl p-4 md:p-8">
-        <CircleAreaProof />
-        <div className="absolute inset-0 z-10 bg-black/75 rounded-3xl"></div>
-        <div className="relative z-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl">
+      <section className="relative mb-24 flex h-[70vh] flex-col items-center justify-center overflow-hidden text-center rounded-3xl bg-[#050a05]">
+        <div className="relative z-10 flex flex-col items-center w-full max-w-3xl px-4">
+          <div className="relative w-full" style={{ height: 'clamp(220px, 42vh, 340px)' }}>
+            <CircleAreaProof />
+          </div>
+          <h1
+            className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl animate-fade-in"
+            style={{ animationDelay: '0.2s', marginTop: '-0.5rem' }}
+          >
             ovandoBrown.blog
           </h1>
-        </div>
-        <div className="absolute bottom-12 left-1/2 w-full max-w-2xl -translate-x-1/2 px-4 z-20">
-          <div className="flex justify-around items-center">
-            <NavPlanet href="/" imgSrc="https://firebasestorage.googleapis.com/v0/b/orbital-narratives.firebasestorage.app/o/Untitled-3.png?alt=media&token=f76e2b40-79a2-4103-b5d2-6799e0ae9683" label="Home" hint="blue planet" animationClass="animate-planet-1-orbit" imageClassName="rotate-[5deg]" imageAnimationClass="animate-wobble" />
-            <NavPlanet href="/knowledge-base" imgSrc="https://firebasestorage.googleapis.com/v0/b/orbital-narratives.firebasestorage.app/o/Untitled-4.png?alt=media&token=3ee7be91-c15c-4ff2-8aba-11542ebc1252" label="OBKB" hint="lava planet" animationClass="animate-planet-2-orbit" imageClassName="-rotate-90" imageAnimationClass="animate-spin-medium" />
-            <NavPlanet href="/about" imgSrc="https://firebasestorage.googleapis.com/v0/b/orbital-narratives.firebasestorage.app/o/Untitled-01.png?alt=media&token=786a5961-0ab7-4851-9cb1-9ffb0bb842ae" label="About" hint="moon planet" animationClass="animate-planet-3-orbit" imageClassName="rotate-[5deg]" imageAnimationClass="animate-spin-reverse" />
-          </div>
         </div>
       </section>
 
