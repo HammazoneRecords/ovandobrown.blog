@@ -40,11 +40,6 @@ export default async function Home() {
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl">
             ovandoBrown.blog
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground/80 md:text-xl flex items-center justify-center gap-2">
-            from the perspective of my angle
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block h-5 w-5"><polyline points="21 21 3 21 21 3 21 21"></polyline><line x1="3" y1="21" x2="21" y2="3"></line></svg>
-            nine 10 Nine - 2
-          </p>
         </div>
         <div className="absolute bottom-12 left-1/2 w-full max-w-2xl -translate-x-1/2 px-4 z-20">
           <div className="flex justify-around items-center">
