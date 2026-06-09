@@ -4,13 +4,8 @@ import PostCard from '@/components/post-card';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { User, Image as ImageIcon } from 'lucide-react';
-import HomeVideoPlayer from '@/components/home-video-player';
-import FeaturedPost from '@/components/featured-post'; // Extracting for client interactivity if needed, but actually we can keep it inline or make a client wrapper if it has state.
-// Wait, the featured post section has client state (imageError). I should make a 'FeaturedPostCard' component that is 'use client' to handle that state, OR just accept that I need a client wrapper for the image error handling.
-// Simpler: Let's make a new component `src/components/featured-post-card.tsx` for the big card, or just reuse the logic.
-// For speed, I'll inline a simple client component extraction or just assume images work for now?
-// No, the previous code had `featuredImageError` state. I should preserve that.
-// Let's create `src/components/featured-post.tsx` which is 'use client'.
+import CircleAreaProof from '@/components/CircleAreaProof';
+import FeaturedPost from '@/components/featured-post';
 
 const NavPlanet = ({ href, imgSrc, label, hint, animationClass, imageClassName, imageAnimationClass }: { href: string, imgSrc: string, label: string, hint: string, animationClass?: string, imageClassName?: string, imageAnimationClass?: string }) => (
   <Link href={href} className="group relative flex flex-col items-center gap-2 transition-transform duration-300 hover:!scale-110">
@@ -34,8 +29,8 @@ export default async function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <section className="relative mb-24 flex h-[70vh] flex-col items-center justify-center overflow-hidden text-center rounded-3xl p-4 md:p-8">
-        <HomeVideoPlayer src="https://firebasestorage.googleapis.com/v0/b/orbital-blog-errorxy.firebasestorage.app/o/Home%2FVideo_Ready_Faster_Spaceship.mp4?alt=media&token=46ad6303-3c25-449a-99ce-da269e815983" />
-        <div className="absolute inset-0 z-10 bg-black/60 rounded-3xl"></div>
+        <CircleAreaProof />
+        <div className="absolute inset-0 z-10 bg-black/75 rounded-3xl"></div>
         <div className="relative z-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl">
             ovandoBrown.blog
