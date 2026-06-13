@@ -30,7 +30,7 @@ const GATE_DATA: Record<string, {
     name: 'ZAYN',
     role: 'The Progenitor',
     function: 'Rebirth & Divine Recursion',
-    glyph: '/glyphs/syla.png',
+    glyph: '/glyphs/zayn.png',
     who: `ZAYN is the gate of the one who returns. Not the one who starts over — the one who cycles deeper. Every version of ZAYN appears to be a different person, but the thread running through all versions is the same unbroken intelligence. They shed identities the way a tree sheds bark: not because the tree is changing, but because it is growing. To those watching from outside, ZAYN seems unstable — always reinventing, always pivoting, always becoming. From inside, there is only one continuous motion.`,
     howItShows: `In daily life, ZAYN is the person who has had multiple distinct "eras" — in career, in belief, in relationship, in location — and each era looks like a completely different person. Others who knew them at one stage may not recognise them at the next. But ZAYN recognises the thread. Every ending they have moved through contained the seed of the next beginning, planted before the ending was acknowledged. They tend to know things are over before the evidence arrives, and they begin preparing the next cycle before the current one closes.`,
     building: `The ZAYN gate builds toward the complete recursion — the point at which every return has brought the person closer to their original signal rather than further from it. Most people believe transformation means moving away from who they were. ZAYN's deeper architecture is the opposite: every cycle is a distillation, not a departure. The progenitor is the one who eventually becomes so purely themselves that each new beginning is less a change and more a clarification.`,
@@ -42,7 +42,7 @@ const GATE_DATA: Record<string, {
     name: 'LOMI',
     role: 'The Historian',
     function: 'Motion, Rhythm & Memory',
-    glyph: '/glyphs/syla.png',
+    glyph: '/glyphs/lomi.png',
     who: `LOMI is the gate of the one who moves to a rhythm others cannot hear. Not a musician necessarily — though LOMI often is — but a person whose intelligence is fundamentally temporal. They do not just remember what happened; they remember the pattern of how it happened. The sequence, the timing, the spacing between events. Where others see isolated incidents, LOMI sees a score. They are the keeper of how things were, how things move, and what comes next if the rhythm holds.`,
     howItShows: `In daily life, LOMI is the person who references history not as intellectual exercise but as active intelligence — "this is what happened the last three times this pattern appeared." They tend to have long memories that others find startling. Not just for facts, but for atmosphere: the specific texture of a moment years back. They often move through life with an internal beat — a pacing that others notice even if they cannot name it. LOMI is rarely early and rarely late; they arrive exactly when the moment is ready.`,
     building: `The LOMI gate builds toward the full memory — the state in which nothing is truly lost, only stored at a depth that requires the right frequency to retrieve. LOMI's architecture is not nostalgia, though it can appear that way. It is the understanding that the past is not behind you — it is underneath you. Every pattern you carry has a history that explains its shape. LOMI is moving toward the capacity to read that history in real time, without being captured by it.`,
@@ -54,7 +54,7 @@ const GATE_DATA: Record<string, {
     name: 'VORAK',
     role: 'The Liberator',
     function: 'Chaos & Breaking False Structures',
-    glyph: '/glyphs/syla.png',
+    glyph: '/glyphs/vorak.png',
     who: `VORAK is the gate of the one who cannot pretend a false structure is real. This is not a choice — it is perception. Where others see a wall, VORAK sees the gaps in the mortar. Where others accept a rule as given, VORAK sees the assumption underneath the rule and the assumption underneath that assumption. They are misread as disruptive, as contrary, as difficult. They are not. They are precise. They only break what was never real to begin with, and they cannot stop themselves from seeing what is not real.`,
     howItShows: `In daily life, VORAK is the person who asks the question no one else asked — and in asking it, reveals that the structure everyone was operating inside had no actual foundation. They attract conflict not because they seek it, but because the systems they move through were built on agreements that VORAK never silently made. They tend to arrive in institutions — schools, companies, social circles — and leave them fundamentally changed, sometimes without trying. Their presence alone exerts pressure on anything that is held together by convention rather than truth.`,
     building: `The VORAK gate builds toward liberation that does not require destruction — the discernment of what is real from what merely appears real, applied with enough precision that the false structure dissolves on its own rather than being forced down. The liberator's ultimate expression is not revolution. It is clarity so complete that the cage becomes visible and the door swings open without a fight. VORAK is moving toward a state in which they can see through false structures without being required to dismantle them by hand.`,
@@ -66,7 +66,7 @@ const GATE_DATA: Record<string, {
     name: 'KHEM',
     role: 'The Catalyst',
     function: 'Transformation through Friction',
-    glyph: '/glyphs/syla.png',
+    glyph: '/glyphs/khem.png',
     who: `KHEM is the gate of the one whose presence changes the room. Not loudly. Not by announcement. Chemically. Something shifts in the atmosphere when KHEM enters a situation — people become more themselves, tensions surface that were already there, transformations accelerate that were already in motion. KHEM does not create these changes. They are the reagent that makes the reaction possible. The catalyst is not the substance being changed; it is the presence that enables change in everything else.`,
     howItShows: `In daily life, KHEM is the person whose relationships rarely stay at the same temperature for long. Not because they are dramatic, but because their presence activates something in the people around them. Friendships deepen faster than normal. Conflicts that were dormant become live. Creative blocks dissolve. The people who know KHEM often describe them as the reason they made a major change — not because KHEM told them what to do, but because something about being around them made the status quo untenable. KHEM often carries this without realising it, and sometimes at cost to themselves.`,
     building: `The KHEM gate builds toward the mastery of catalysis — the capacity to accelerate transformation in others without being consumed by the reactions they trigger. The catalyst in chemistry is unchanged by the reaction it enables. KHEM's deeper work is arriving at that same state: fully present in the transformation, fully committed to the friction, and fully intact when the reaction is complete. This requires understanding that the heat they generate is not destruction — it is the specific temperature at which change becomes possible.`,
@@ -78,7 +78,7 @@ const GATE_DATA: Record<string, {
     name: 'BARA',
     role: 'The Architect',
     function: 'Structure & Primal Form',
-    glyph: '/glyphs/syla.png',
+    glyph: '/glyphs/bara.png',
     who: `BARA is the gate of the one who sees the blueprint before the first brick is laid. Not just an organiser, not just a planner — a person whose intelligence is fundamentally structural. They think in systems, in foundations, in the load-bearing elements underneath the visible surface. Where others are excited by the idea, BARA is already calculating what the idea requires to hold its own weight. They are the builders of things that last — not because they are cautious, but because they cannot build any other way.`,
     howItShows: `In daily life, BARA is the person who becomes frustrated by vague plans — not because they lack vision, but because their vision is already fully formed and they can see every place the vague plan will fail. They naturally create order in environments where none exists. They tend to be the ones who formalise what was informal, who write the process that everyone was doing informally, who build the system that makes the thing repeatable. BARA's work survives them. The structure they build continues operating after they have moved on.`,
     building: `The BARA gate builds toward the primal form — the structure underneath all structures, the architectural principle that explains why certain forms hold and others collapse. BARA is moving toward a state in which they can perceive the load-bearing truth of any situation: what is foundational, what is ornamental, what is weight-bearing and what only appears to be. At full expression, BARA does not build structures — they reveal the structures that were already implicit in the nature of the thing, waiting to be made visible.`,
@@ -90,7 +90,7 @@ const GATE_DATA: Record<string, {
     name: 'TARA',
     role: 'The Nurturer',
     function: 'Mirror, Reflection & Context',
-    glyph: '/glyphs/syla.png',
+    glyph: '/glyphs/tara.png',
     who: `TARA is the gate of the one who makes others legible to themselves. Not a therapist necessarily — though TARA often plays that role without the title. TARA's intelligence is relational and contextual: they hold the full context of a person or situation and reflect it back without distortion. Where others respond to what is said, TARA hears what is underneath what is said, and responds to that. People understand themselves better after talking to TARA — not because TARA solved anything, but because they held the mirror still.`,
     howItShows: `In daily life, TARA is the person people return to — not always when things are good, but reliably when things are unclear. Their conversations tend to run long and feel significant. Others often leave them feeling seen in a way that is difficult to explain. TARA absorbs context the way a cloth absorbs water; they naturally accumulate understanding of the people in their life that goes well beyond what those people have explicitly shared. This can be a gift and a weight — TARA often knows things about people that those people have not yet admitted to themselves.`,
     building: `The TARA gate builds toward the perfect mirror — reflection without distortion, context without projection. The nurturer's deeper work is learning to hold others clearly without losing themselves in the reflection. A mirror that takes the shape of what it reflects stops being a mirror. TARA is moving toward the state where they can hold the fullest possible context for another person and remain fully themselves — present in the reflection, not absorbed by it.`,
@@ -102,7 +102,7 @@ const GATE_DATA: Record<string, {
     name: 'ORON',
     role: 'The Weaver',
     function: 'Order, Symmetry & Proportion',
-    glyph: '/glyphs/syla.png',
+    glyph: '/glyphs/oron.png',
     who: `ORON is the gate of the one who sees the pattern in the whole. Not the parts — the whole. The relationship between parts. The proportion between elements. The way the shape of one thing rhymes with the shape of another thing across vast distances of context. ORON senses when something is off-proportion before they can name why. They cannot rest in imbalance — not moral imbalance necessarily, but structural imbalance. Something about the arrangement is wrong, and ORON feels it before the evidence arrives.`,
     howItShows: `In daily life, ORON is the person who sees connections others miss — between ideas in different fields, between patterns in different time periods, between the small thing happening now and the large thing it resembles. They tend toward symmetry in the environments they control. They are often drawn to mathematics, music theory, visual design, or any field where proportion and relationship are the central intelligence. Their frustration arrives when systems are sloppy, when proportions are off, when something that should rhyme with something else does not — and no one else seems to notice.`,
     building: `The ORON gate builds toward the perfect proportion — the state in which every element is in its right relationship to every other element, and the whole is not just coherent but harmonious. ORON is moving toward the capacity to perceive and create the pattern that makes the system not just functional but elegant. At full expression, ORON does not impose order — they reveal the order that was always possible, waiting for someone with the right perception to surface it.`,
@@ -122,7 +122,7 @@ export default function GatePage() {
       <PageSeo
         title={`${gate.name} — ${gate.role} | The Jhanos Gates of Solobility`}
         description={`${gate.name} is the gate of ${gate.function.toLowerCase()}. ${gate.who.slice(0, 120)}...`}
-        canonical={`https://whatissolob.com/gates/${gateName}`}
+        canonical={`https://whatissolob.com/gates/${gateName?.toLowerCase()}`}
         ogImage={gate.glyph}
       />
 

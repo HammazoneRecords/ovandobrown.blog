@@ -12,6 +12,8 @@ Disallow: /dashboard
 Disallow: /designer
 Disallow: /offering
 Disallow: /confirmation
+Disallow: /gates$
+Disallow: /reader
 
 # API
 Disallow: /api/
